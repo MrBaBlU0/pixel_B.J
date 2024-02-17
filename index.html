@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pixelamage</title>
+    <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+    <header>
+        <a href="https://github.com/ariear/pixelamage" target="_blank" class="wrap-btn-github">
+            <img src="assets/image/github-icon.png" alt="">
+        </a>
+        <div>
+            <h1>Pixelamage</h1>
+            <p>Make your image to pixel here</p>
+        </div>
+    </header>
+    <div class="wrap-upload-image">
+        <input type="file" accept="image/*" onchange="loadFile(event)"  id="file-input">
+    </div>
+    <div class="wrap-img-output">
+        <img id="output" class="img-output" />
+    </div>
+    
+    <p class="text-resuls sembunyi">Results</p>
+    <div class="wrap-img-output">
+        <img id="imageOutput" class="img-output">
+        <input type="range" name="" min="5" max="40" value="10" id="slide" class="slider sembunyi">
+        <button id="downloadButton" class="btn btn-download sembunyi">Download</button>
+    </div>
+    <footer>
+        <p>Copyright © 2023 Ariear</p>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+</body>
+</html>
